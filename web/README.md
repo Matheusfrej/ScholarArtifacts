@@ -76,7 +76,7 @@ You can run the web app in two different configurations:
 2. **Connected to the remote API:**
 
    ```env
-   NEXT_PUBLIC_API_BASE=https://linked-artifacts.duckdns.org
+   NEXT_PUBLIC_API_BASE=https://scholarartifacts-26451109795.us-central1.run.app
    ```
 
 3. **Standalone mode (using internal mock data):**
