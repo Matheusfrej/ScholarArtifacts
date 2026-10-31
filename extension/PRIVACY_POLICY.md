@@ -1,8 +1,8 @@
-# Privacy Policy — LinkedArtifacts
+# Privacy Policy — ScholarArtifacts
 
 ## Overview
 
-The LinkedArtifacts extension helps Google Scholar users find and access artifacts related to academic papers, such as source code, datasets, and project pages.
+The ScholarArtifacts extension helps Google Scholar users find and access artifacts related to academic papers, such as source code, datasets, and project pages.
 
 This policy explains what data the extension collects, how that data is used, and how it is protected.
 
@@ -17,7 +17,7 @@ These titles are used only to look up matches in our API and determine whether a
 
 ## Use of Data
 
-The titles captured by the extension are sent to the LinkedArtifacts backend so we can:
+The titles captured by the extension are sent to the ScholarArtifacts backend so we can:
 
 - identify whether an artifact is associated with the paper;
 - retrieve the internal paper identifier;
@@ -37,7 +37,7 @@ The backend may keep access logs securely for operational and service improvemen
 
 ## Data Sharing
 
-LinkedArtifacts does not share collected data with advertisers or third parties for monetization purposes.
+ScholarArtifacts does not share collected data with advertisers or third parties for monetization purposes.
 
 Data may be processed by third-party service providers that support the operation of the service (for example, hosting providers), but only to provide extension functionality and maintain service security.
 

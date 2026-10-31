@@ -1,7 +1,7 @@
 {
-  "name": "linkedartifacts-api",
+  "name": "scholarartifacts-api",
   "version": "1.2.0",
-  "description": "linkedartifacts-api",
+  "description": "scholarartifacts-api",
   "main": "dist/index.js",
   "type": "commonjs",
   "scripts": {

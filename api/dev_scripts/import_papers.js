@@ -391,8 +391,8 @@ function resolveDatasetPaths() {
   let jsonPath = customJsonArg ? path.resolve(customJsonArg.split("=")[1]) : null;
   if (!jsonPath) {
     const candidates = [
-      path.join(__dirname, "linked_artifacts_api/papers.json"),
-      path.join(__dirname, "linked_artifacts_dataset/papers.json"),
+      path.join(__dirname, "scholar_artifacts_api/papers.json"),
+      path.join(__dirname, "scholar_artifacts_dataset/papers.json"),
       path.join(__dirname, "../tools/dataset/papers.json"),
     ];
     jsonPath = candidates.find((p) => fs.existsSync(p)) || candidates[0];

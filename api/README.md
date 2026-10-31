@@ -1,12 +1,12 @@
-# LinkedArtifacts API
+# ScholarArtifacts API
 
-REST API for LinkedArtifacts, built with TypeScript, Express, and Drizzle ORM.
+REST API for ScholarArtifacts, built with TypeScript, Express, and Drizzle ORM.
 
 The project follows a Domain-Driven Design (DDD) architecture.
 
 ## Table of contents
 
-- [LinkedArtifacts API](#linkedartifacts-api)
+- [ScholarArtifacts API](#scholarartifacts-api)
   - [Table of contents](#table-of-contents)
   - [Architecture](#architecture)
   - [Running the application](#running-the-application)

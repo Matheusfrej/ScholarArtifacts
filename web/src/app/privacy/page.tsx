@@ -6,7 +6,7 @@ export default function PrivacyPage() {
   return (
     <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-12">
       <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-        Privacy Policy — LinkedArtifacts
+        Privacy Policy — ScholarArtifacts
       </h1>
       <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-6">
         <strong>Effective date:</strong> {effectiveDate}
@@ -17,7 +17,7 @@ export default function PrivacyPage() {
           Overview
         </h2>
         <p className="text-sm sm:text-base text-gray-800 dark:text-gray-200 leading-relaxed">
-          The LinkedArtifacts extension helps Google Scholar users find and
+          The ScholarArtifacts extension helps Google Scholar users find and
           access artifacts related to academic papers, such as source code,
           datasets, and project pages.
         </p>
@@ -46,7 +46,7 @@ export default function PrivacyPage() {
           Use of Data
         </h3>
         <p className="text-sm sm:text-base text-gray-800 dark:text-gray-200 leading-relaxed">
-          The titles captured by the extension are sent to the LinkedArtifacts
+          The titles captured by the extension are sent to the ScholarArtifacts
           backend so we can:
         </p>
         <ul className="list-disc ml-5 sm:ml-6 mt-2 text-sm sm:text-base text-gray-800 dark:text-gray-200 space-y-1">
@@ -86,7 +86,7 @@ export default function PrivacyPage() {
           Data Sharing
         </h3>
         <p className="text-sm sm:text-base text-gray-800 dark:text-gray-200 leading-relaxed">
-          LinkedArtifacts does not share collected data with advertisers or
+          ScholarArtifacts does not share collected data with advertisers or
           third parties for monetization purposes.
         </p>
         <p className="mt-2 text-sm sm:text-base text-gray-800 dark:text-gray-200 leading-relaxed">
@@ -137,7 +137,7 @@ export default function PrivacyPage() {
       </section>
 
       <footer className="mt-8 pt-4 border-t border-border/40 text-xs sm:text-sm text-gray-500 dark:text-gray-400">
-        © 2026 LinkedArtifacts. Not affiliated with Google Scholar.
+        © 2026 ScholarArtifacts. Not affiliated with Google Scholar.
       </footer>
     </main>
   )

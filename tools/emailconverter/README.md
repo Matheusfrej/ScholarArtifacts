@@ -84,10 +84,10 @@ python3 convert_emails_to_xlsx.py
 
 Output:
 ```text
-Reading JSON from: /home/mathe/mestrado/LinkedArtifacts/tools/dataset/emails_with_papers.json
+Reading JSON from: /home/mathe/mestrado/ScholarArtifacts/tools/dataset/emails_with_papers.json
 Deduplication enabled: all 2180 emails are already unique.
-Writing 2180 records to: /home/mathe/mestrado/LinkedArtifacts/tools/dataset/emails_with_papers.xlsx
-Done! Excel file generated: /home/mathe/mestrado/LinkedArtifacts/tools/dataset/emails_with_papers.xlsx
+Writing 2180 records to: /home/mathe/mestrado/ScholarArtifacts/tools/dataset/emails_with_papers.xlsx
+Done! Excel file generated: /home/mathe/mestrado/ScholarArtifacts/tools/dataset/emails_with_papers.xlsx
 ```
 
 ### 2. Keep Duplicate Emails (`--keep-duplicates`)

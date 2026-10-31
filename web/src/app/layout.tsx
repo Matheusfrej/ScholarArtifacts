@@ -26,7 +26,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'LinkedArtifacts',
+  title: 'ScholarArtifacts',
   description: 'Link papers with its artifacts',
 }
 

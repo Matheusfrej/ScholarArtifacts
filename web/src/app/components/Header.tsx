@@ -10,7 +10,7 @@ export default function Header() {
           href="/papers"
           className="text-xl sm:text-2xl font-bold tracking-tight text-foreground hover:opacity-90 transition-opacity"
         >
-          LinkedArtifacts
+          ScholarArtifacts
         </Link>
         <div className="flex items-center gap-2">
           <ThemeToggle />

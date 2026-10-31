@@ -8,7 +8,7 @@ else
   EXT_DIR="$SCRIPT_DIR/extension"
 fi
 OUT_DIR="$EXT_DIR/dist"
-ZIP_NAME="${1:-linked-artifacts-extension.zip}"
+ZIP_NAME="${1:-scholar-artifacts-extension.zip}"
 ZIP_PATH="$OUT_DIR/$ZIP_NAME"
 
 mkdir -p "$OUT_DIR"

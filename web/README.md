@@ -1,12 +1,12 @@
-# LinkedArtifacts Web
+# ScholarArtifacts Web
 
-Frontend web application for LinkedArtifacts, built with Next.js (App Router), React, TypeScript, and Tailwind CSS.
+Frontend web application for ScholarArtifacts, built with Next.js (App Router), React, TypeScript, and Tailwind CSS.
 
 The application allows users to explore academic papers, filter by artifact badges, search across paper metadata, and inspect linked artifacts.
 
 ## Table of contents
 
-- [LinkedArtifacts Web](#linkedartifacts-web)
+- [ScholarArtifacts Web](#scholarartifacts-web)
   - [Table of contents](#table-of-contents)
   - [Architecture](#architecture)
   - [Running the application](#running-the-application)
@@ -58,15 +58,15 @@ cp .env.example .env
 
 The application uses the following environment variable:
 
-| Variable               | Description                                                                                                                                   | Default / Example       |
-| ---------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
-| `NEXT_PUBLIC_API_BASE` | Base URL of the LinkedArtifacts API. If left unset or empty, the application defaults to its internal mock API (`http://localhost:3000/api`). | `http://localhost:4000` |
+| Variable               | Description                                                                                                                                    | Default / Example       |
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- |
+| `NEXT_PUBLIC_API_BASE` | Base URL of the ScholarArtifacts API. If left unset or empty, the application defaults to its internal mock API (`http://localhost:3000/api`). | `http://localhost:4000` |
 
 ### Connecting to the backend API vs. Mock data
 
 You can run the web app in two different configurations:
 
-1. **Connected to the local LinkedArtifacts API:**
+1. **Connected to the local ScholarArtifacts API:**
    Ensure the API is running (see [API README](../api/README.md)) on port `4000`, and set in `.env`:
 
    ```env

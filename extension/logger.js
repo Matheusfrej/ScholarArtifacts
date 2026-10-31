@@ -1,4 +1,4 @@
-const extensionName = 'LinkedArtifacts'
+const extensionName = 'ScholarArtifacts'
 
 const $logger = {
   debug: (source, ...args) => {
