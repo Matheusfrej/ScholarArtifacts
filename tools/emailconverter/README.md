@@ -98,7 +98,15 @@ If you want the spreadsheet to contain all paper occurrences for authors who pub
 python3 convert_emails_to_xlsx.py --keep-duplicates
 ```
 
-### 3. Custom Input and Output Paths
+### 3. Filter Specific Conferences (`-c` / `--conferences`)
+
+You can generate a spreadsheet containing only specific conferences (case-insensitive, applied before deduplication):
+
+```bash
+python3 convert_emails_to_xlsx.py -c fse icse -o ../dataset/emails_fse_icse.xlsx
+```
+
+### 4. Custom Input and Output Paths
 
 You can convert any custom JSON file or output to a specific path:
 
@@ -114,6 +122,7 @@ python3 convert_emails_to_xlsx.py -i path/to/input.json -o path/to/output.xlsx
 | :--- | :--- | :--- |
 | `-i`, `--input` | Path to the source JSON file. | `tools/dataset/emails_with_papers.json` |
 | `-o`, `--output` | Destination path for the `.xlsx` file. | Same folder & basename as input with `.xlsx` |
+| `-c`, `--conferences` | Filter by one or more conferences (e.g. `-c fse icse`). | `None` (all conferences included) |
 | `--keep-duplicates`, `--no-dedup` | Disable deduplication and keep all occurrences of each email. | `False` (deduplication is enabled by default) |
 
 ---

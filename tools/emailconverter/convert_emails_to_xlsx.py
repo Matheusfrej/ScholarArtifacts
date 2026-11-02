@@ -18,6 +18,7 @@ def convert_json_to_xlsx(
     input_path: str,
     output_path: str | None = None,
     deduplicate: bool = True,
+    conferences: list[str] | None = None,
 ) -> str:
     input_file = Path(input_path).resolve()
     if not input_file.exists():
@@ -31,6 +32,18 @@ def convert_json_to_xlsx(
     print(f"Reading JSON from: {input_file}")
     with open(input_file, "r", encoding="utf-8") as f:
         data = json.load(f)
+
+    if conferences:
+        allowed_confs = {c.strip().upper() for c in conferences if c.strip()}
+        before_filter = len(data)
+        data = [
+            row for row in data
+            if str(row.get("conference", "")).strip().upper() in allowed_confs
+        ]
+        print(
+            f"Conference filter ({', '.join(sorted(allowed_confs))}): "
+            f"kept {len(data)} of {before_filter} records."
+        )
 
     # Format list fields (e.g. authors) cleanly as semicolon-separated strings
     for row in data:
@@ -110,12 +123,20 @@ def main():
         action="store_false",
         help="Disable deduplication and keep all occurrences of duplicate emails. By default, duplicate emails are removed, keeping only the first paper.",
     )
+    parser.add_argument(
+        "-c",
+        "--conferences",
+        nargs="+",
+        default=None,
+        help="Filter emails by specific conference(s), case-insensitive (e.g. -c fse icse).",
+    )
 
     args = parser.parse_args()
     convert_json_to_xlsx(
         input_path=args.input,
         output_path=args.output,
         deduplicate=args.deduplicate,
+        conferences=args.conferences,
     )
 
 
